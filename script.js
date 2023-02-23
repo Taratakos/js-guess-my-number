@@ -1,23 +1,5 @@
-'use strict';
-/////////////////////////////////////////
 // 70. PROJECT #1: Guess My Number!
-// console.log(document.querySelector('.message').textContent);
 
-/////////////////////////////////////////
-// 71. What's the DOM and DOM Manipulation
-/*
-console.log(document.querySelector('.message').textContent);
-document.querySelector('.message').textContent = '🎉 Correct Number!';
-console.log(document.querySelector('.message').textContent);
-
-document.querySelector('.number').textContent = 13;
-document.querySelector('.score').textContent = 10;
-
-document.querySelector('.guess').value = 23;
-console.log(document.querySelector('.guess').value);
-*/
-/////////////////////////////////////////
-// 73. What's the DOM and DOM Manipulation
 /*
 // So we selected this button here using querySelector. And then we use the addEventListener method on that element to attach an event handler. And that event handler is this function here. Okay, so this is, again, just a function expression. So we wrote here a function that has a similar format as this. We simply did not assign it to any variable. Instead, we passed it directly here into the addEventListener method. So as the first argument, we had the name of the event that we're listening for, which is a click. And then as the second argument, we have this function value. And this function simply contains the code that we want to execute whenever the event happens. Also, note that we do not call this function here anywhere, right? We only define the function here, and then pass it into the event handler. But it is the JavaScript engine who will call this function as soon as the event happens.
 document.querySelector('.check').addEventListener('click', function () {
@@ -31,49 +13,6 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.message').textContent = '⛔ No Number!';
   }
 });
-*/
-/////////////////////////////////////////
-// 74. Implementing the Game Logic
-/*
-//  let's define the number, between 1 and 20
-const secretNumber = Math.trunc(Math.random() * 20) + 1;
-let score = 20;
-document.querySelector('.number').textContent = secretNumber;
-
-document.querySelector('.check').addEventListener('click', function () {
-  const guess = Number(document.querySelector('.guess').value);
-  console.log(guess, typeof guess);
-
-  if (!guess) {
-    document.querySelector('.message').textContent = '⛔ No Number!';
-  } else if (guess === secretNumber) {
-    document.querySelector('.message').textContent = '🎉 Correct Number!';
-  } else if (guess > secretNumber) {
-    if (score > 1) {
-      document.querySelector('.message').textContent = '📈 Too high!';
-      score = score - 1;
-      document.querySelector('.score').textContent = score;
-    } else {
-      document.querySelector('.message').textContent =
-        'You loose the game ! 😟';
-      document.querySelector('.score').textContent = 0;
-    }
-  } else if (guess < secretNumber) {
-    if (score > 1) {
-      document.querySelector('.message').textContent = '📈 Too low!';
-      score = score - 1;
-      document.querySelector('.score').textContent = score;
-    } else {
-      document.querySelector('.message').textContent =
-        'You loose the game ! 😟';
-      document.querySelector('.score').textContent = 0;
-    }
-  }
-  // If we define the secret number inside this handler function then on each click, we would get a new secret number.
-});
-*/
-/////////////////////////////////////////
-// 75. Manipulating CSS Styles
 
 /////////////////////////////////////////
 // 76. Coding challenge #1 ( implement the functionality of playing the game again)
@@ -176,18 +115,3 @@ document.querySelector('.check').addEventListener('click', function () {
   //   }
   // }
 });
-
-/////////////////////////////////////////
-// ##. Topic
-
-/////////////////////////////////////////
-// ##. Topic
-
-/////////////////////////////////////////
-// ##. Topic
-
-/////////////////////////////////////////
-// ##. Topic
-
-/////////////////////////////////////////
-// ##. Topic
